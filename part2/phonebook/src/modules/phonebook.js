@@ -6,7 +6,7 @@ const Get = (setpersons, seterrormessage) => {
     const fetchdata = async () => {
       try {
         const promise = axios
-          .get("http://localhost:3001/persons")
+          .get("https://phonebook-backend-yvrh.onrender.com/api/persons")
           .then((Response) => {
             setpersons(Response.data);
           });

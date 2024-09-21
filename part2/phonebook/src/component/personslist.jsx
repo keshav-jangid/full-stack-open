@@ -6,7 +6,7 @@ const Personslist = (props) => {
   const deletecontact = (id) => {
     alert("Delete the contact ");
     axios
-      .delete(`http://localhost:3001/persons/${id}`)
+      .delete(`https://phonebook-backend-yvrh.onrender.com/api/persons/${id}`)
       .then((Response) => {
         console.log(id);
         console.log("deleted", Response.data);
