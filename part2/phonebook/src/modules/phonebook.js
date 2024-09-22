@@ -1,4 +1,6 @@
 import axios from "axios";
+const baseurl = "/api/persons";
+
 import { useEffect } from "react";
 const Get = (setpersons, seterrormessage) => {
   // useffect and call api using axios.get method //
