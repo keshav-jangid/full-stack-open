@@ -1,4 +1,6 @@
 import axios from "axios";
+const baseurl = "/api/persons";
+
 import { useEffect } from "react";
 const Get = (setpersons, seterrormessage) => {
   // useffect and call api using axios.get method //
@@ -6,7 +8,7 @@ const Get = (setpersons, seterrormessage) => {
     const fetchdata = async () => {
       try {
         const promise = axios
-          .get("http://localhost:3001/persons")
+          .get("https://phonebook-backend-yvrh.onrender.com/api/persons")
           .then((Response) => {
             setpersons(Response.data);
           });

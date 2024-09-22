@@ -22,7 +22,7 @@ const Addbutton = (props) => {
       seterrormessage(`${newname.name} already exists!`);
     } else {
       setpersons(persons.concat(newname));
-      axios.post("http://localhost:3001/persons", newname).then((reponse) => {
+      axios.post("https://phonebook-backend-yvrh.onrender.com/api/persons", newname).then((reponse) => {
         console.log(reponse.data);
 
         seterrormessage("new contact added successfully");
